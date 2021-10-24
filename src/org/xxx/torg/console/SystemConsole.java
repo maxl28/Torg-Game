@@ -21,10 +21,10 @@ public class SystemConsole extends Console {
         // Windows
 
         colorMap.put(ConsoleColor.BLACK, "\u001B[30m");
-        colorMap.put(ConsoleColor.WHITE, "\u001B[97m");
-        colorMap.put(ConsoleColor.GRAY, "\u001B[37m");
-        colorMap.put(ConsoleColor.RED, "\u001B[31m");
-        colorMap.put(ConsoleColor.GREEN, "\u001B[32m\t");
+        colorMap.put(ConsoleColor.WHITE, "\u001B[37m");
+        colorMap.put(ConsoleColor.GRAY, "\u001B[90m");
+        colorMap.put(ConsoleColor.RED, "\u001B[91m");
+        colorMap.put(ConsoleColor.GREEN, "\u001B[32m");
         colorMap.put(ConsoleColor.BLUE, "\u001B[34m");
         colorMap.put(ConsoleColor.YELLOW, "\u001B[33m");
     }
@@ -35,6 +35,6 @@ public class SystemConsole extends Console {
     }
 
     public void Say(ConsoleColor c, String name, String msg) {
-        Print(_c(ConsoleColor.BLACK) + "[" + _c(c) + name + _c(ConsoleColor.BLACK) + "] says \"" + _c(ConsoleColor.GRAY) + msg + _c(ConsoleColor.WHITE) + "\".\n\r");
+        Print(_c(ConsoleColor.WHITE) + "[" + _c(c) + name + _c(ConsoleColor.WHITE) + "] says \"" + _c(ConsoleColor.GRAY) + msg + _c(ConsoleColor.WHITE) + "\".\n\r");
     }
 }

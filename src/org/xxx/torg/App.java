@@ -24,7 +24,7 @@ public class App {
                 this.getConsole().Say(
                         ConsoleColor.RED,
                         "HIVE",
-                        "Welcome traveler! Welcome to the " + Console._c(ConsoleColor.BLUE) + "Game Loop" + Console._c(ConsoleColor.BLACK) + "!"
+                        "Welcome traveler! Welcome to the " + Console._c(ConsoleColor.BLUE) + "Game Loop" + Console._c(ConsoleColor.WHITE) + "!"
                 );
                 spoken = true;
             }
