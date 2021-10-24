@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Torg-Game:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Torg_Game_jar</output-path>
+    <root id="archive" name="Torg-Game.jar">
+      <element id="module-output" name="Torg-Game" />
+    </root>
+  </artifact>
+</component>
