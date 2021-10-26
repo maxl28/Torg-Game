@@ -16,20 +16,17 @@ public class App {
     public void Run() {
         this.isRunning = true;
 
-        boolean spoken = false;
-        do {
-            if (!spoken) {
-                Console cn = this.getConsole();
+        while (isRunning) {
+            Console cn = this.getConsole();
 
-                this.getConsole().Say(
-                        ConsoleColor.RED,
-                        "HIVE",
-                        "Welcome traveler! Welcome to the " + Console._c(ConsoleColor.BLUE) + "Game Loop" + Console._c(ConsoleColor.WHITE) + "!"
-                );
-                spoken = true;
-            }
+            this.getConsole().Say(
+                    ConsoleColor.RED,
+                    "HIVE",
+                    "Welcome traveler! Welcome to the " + Console._c(ConsoleColor.BLUE) + "Game Loop" + Console._c(ConsoleColor.WHITE) + "!"
+            );
+
+            setRunning(false);
         }
-        while (isRunning);
     }
 
     public boolean isRunning() {
